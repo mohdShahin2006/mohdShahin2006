@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --gold: hsl(38, 61%, 73%);
+    --black: hsla(180, 2%, 8%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --green: rgb(134, 255, 112);
+}
+
+body{
+    
+    height: 100%;
+}
+.menu-btn{
+    color: #424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: whitesmoke;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+}
+.navbar .logo h1{
+    color: #424144;
+    border-bottom: 4px solid rgb(41, 41, 41);
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: #424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.navbar .menu li .active{
+    border-bottom: 4px solid rgb(41, 41, 41);
+}
+.navbar .menu li a i{
+    color: rgb(41, 41, 41);
+}
+
+.navbar .menu li a:hover{
+    border-bottom: 4px solid rgb(41, 41, 41);
+
+
+}
+
+/* Content */
+
+.content{
+    background-image: url(A\ professional\ logo\ with\ black\ and\ cream\ colors\ \(1\).png);
+    background-position:right;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 100vh;
+    background-color: whitesmoke;
+
+}
+.content h1{
+    font-size: 40px;
+
+}
+
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border:none;
+    background: rgb(41, 41, 41);
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pheading{
+    text-align:center;
+    margin:50px 0;
+    color: #424144;
+}
+
+
+.sec{
+    padding: 10px 5%;
+}
+ .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+ }
+.products .card{
+    height: 440px;
+    width:310px;
+    background: whitesmoke;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+
+.products .card img{
+    height: 320px;
+    width: 100%;
+
+}
+
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(41, 41, 41);
+    padding: 0 20px;
+}
+
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box .price{
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.products .card .box .btn{
+    font-size: 13px;
+    color: rgb(41, 41, 41);
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px black;
+    border-radius: 20px ;
+
+}
+.products .card .box .btn:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+
+}
+
+/* footer*/
+footer {
+    text-align: center;
+    color: var(--white);
+    background-color: black;
+}
+
+footer .container .brand {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+footer .menu li {
+    display: inline-block;
+    margin: 0.7em;
+    text-align: center;
+}
+
+footer .menu li a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+footer p{
+    margin: 0 auto;
+}
+
+footer .media-icons {
+    margin: 1.5em 0;
+}
+
+footer .media-icons li {
+    display: inline-block;
+    margin: 0.7em;
+}
+
+footer .media-icons li a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+footer .media-icons li a:hover {
+    color: var(--green);
+    transition: 0.5s;
+}
+
+footer .menu li a:hover {
+    color: var(--green);
+    transition: 0.5s;
+}
+
+footer .container .brand:hover {
+    color: var(--white);
+    transition: 0.5s;
+}
